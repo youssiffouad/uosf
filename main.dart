@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-//import 'btnunit.dart';
+
 void main()
 {
   runApp(myapp());
 }
-
+//cell expresses each block that carry either x or o
 class cell
 {
   Color cellclr;
@@ -23,6 +23,8 @@ class myapp extends StatefulWidget {
 }
 class _myappState extends State<myapp> {
 
+  
+  // error:: a non null string must be provided toa text widget, i don' know why!!!
 
   Positioned cellpos(double x, double y , int i)
   {
@@ -35,7 +37,7 @@ class _myappState extends State<myapp> {
   child: RaisedButton(
         color: c.cellclr,
         child: Text(
-        ('lol'),
+        (c.text),
         style: TextStyle(
          color: Colors.green
          ),
